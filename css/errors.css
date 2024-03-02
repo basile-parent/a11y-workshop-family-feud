@@ -8,11 +8,16 @@
 
 #add-error {
     font-size: 1em;
-    padding: 3px 8px;
+    padding: 4px 8px;
 
     border: 5px outset red;
     border-radius: 8px;
     background-color: rgba(19, 32, 79, 0.6);
+}
+#add-error:focus {
+    border: 9px outset red;
+    padding: 0px 4px;
+    background-color: rgba(67, 78, 115, 0.6);
 }
 
 #errors-dialog {

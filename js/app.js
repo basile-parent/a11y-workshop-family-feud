@@ -14,3 +14,7 @@ function toggleAnimation() {
         stopButton.setAttribute("aria-pressed" ,"true");
     }
 }
+
+function goToContent() {
+    document.getElementById("board").focus()
+}
