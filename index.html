@@ -24,12 +24,15 @@
 <main>
     <aside id="logo" aria-hidden="true">
         <img src="/img/logo.png" alt="" />
-        <div id="atecna-stamp">
-            <img src="/img/atecna_full_logo.png" alt="" />
 
-            <div class="sticky anim750">
-                <div class="back circle_wrapper anim750">
-                    <div class="circle anim750"></div>
+        <div id="atecna-stamp-wrapper">
+            <div id="atecna-stamp">
+                <img src="/img/atecna_full_logo.png" alt="" />
+
+                <div class="sticky">
+                    <div class="circle_wrapper">
+                        <div class="circle"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,6 +56,7 @@
     <div class="travel_light"></div>
 </aside>
 
+<button id="add-error" onClick="addError()" aria-label="">X</button>
 <button id="stop-animations" onClick="toggleAnimation()">Arrêter les animations</button>
 
 <script src="js/answer-box.js"></script>
