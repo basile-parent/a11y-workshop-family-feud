@@ -1,0 +1,280 @@
+html {
+    color: #FFF;
+    font-size: 3em;
+    background: url("/img/stage.png") #0a1956 no-repeat center center;
+    background-size: cover;
+    font-family: clarendon, Tahoma, serif;
+    overflow: hidden;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 53vh auto 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    /*height: 75vh;*/
+    /*width: 100vh;*/
+    height: 700px;
+    width: 1000px;
+    /*max-height: 75vh;*/
+
+    border-radius: 100%;
+    box-shadow: 0 0 0 3px hsl(0, 0%, 0%),
+    0 0 0 5px hsl(26, 77%, 52%),
+    0 0 0 8px hsl(26, 76%, 55%),
+    0 0 0 12px hsl(27, 70%, 60%),
+    0 0 0 17px hsl(28, 67%, 64%),
+    0 0 0 20px hsl(28, 63%, 73%),
+    0 0 0 23px hsl(28, 67%, 64%),
+    0 0 0 25px hsl(27, 70%, 60%),
+    0 0 0 28px hsl(26, 76%, 55%),
+    0 0 0 30px hsl(26, 77%, 52%),
+    0 0 0 33px hsl(0, 0%, 0%);
+    background: url("/img/lights.png") #040e3b repeat;
+
+}
+
+#logo {
+    position: absolute;
+    top: -160px;
+    width: 500px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+h1 {
+    width: 650px;
+    font-size: 0.6em;
+    padding: 10px;
+    text-align: center;
+    border: 6px white double;
+    background: linear-gradient(to top, #081c6b, #374fb4);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 4px 4px 0 #000;
+    margin: 0 0 25px 0;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#board {
+    height: 350px;
+    width: 625px;
+
+    background: rgb(23, 23, 23);
+    background: radial-gradient(circle, rgba(60, 60, 60, 1) 0%, rgba(23, 23, 23, 1) 100%);
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 0 0 3px hsl(0, 0%, 0%),
+    0 0 0 5px hsl(26, 77%, 52%),
+    0 0 0 10px hsl(28, 63%, 73%),
+    0 0 0 15px hsl(26, 77%, 52%),
+    0 0 0 18px hsl(0, 0%, 0%);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#board li {
+    height: 81px;
+    max-width: 50%;
+}
+
+/* ********************************************** */
+/* ***************** Answer box ***************** */
+/* ********************************************** */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card.revealed .flip-card-inner {
+    transform: rotateX(-180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(-180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 0.6em;
+    /*background: transparent;*/
+    /*border: none;*/
+    background: rgb(30, 54, 157);
+    background: linear-gradient(0deg, rgba(30, 54, 157, 1) 0%, rgba(93, 118, 223, 1) 41%, rgba(152, 169, 244, 1) 50%, rgba(135, 153, 230, 1) 100%);
+
+    border: 6px white double;
+}
+
+.flip-card-front span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 55px;
+    border: 3px white groove;
+    border-radius: 100%;
+    margin-top: -5px;
+
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+
+    background: linear-gradient(to left, #374fb4, #081c6b);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-back {
+    color: white;
+    text-shadow:
+            1.5px 1.5px 0 #000,
+            -1.5px 1.5px 0 #000,
+            -1.5px -1.5px 0 #000,
+            1.5px -1.5px 0 #000;
+}
+
+
+
+/* ********************************************** */
+/* ************** Lights animation ************** */
+/* ********************************************** */
+
+.lights {
+    position: absolute;
+    z-index: -1;
+    bottom: -800px;
+    /*bottom: 0;*/
+    height: 800px;
+}
+
+#lights_left {
+    left: 5%;
+}
+#lights_right {
+    right: 5%;
+}
+
+.no-animation .lights {
+    display: none;
+}
+.travel_light {
+    display: inline-block;
+    height: 800px;
+    width: 90px;
+    background: url("/img/travel_light.png") no-repeat center center;
+    background-size: cover;
+
+    transform: rotateX(180deg);
+    transform-origin: top center;
+    animation: light_moving 6s ease-in-out infinite;
+}
+.travel_light:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    height: 1500px;
+    width: 210px;
+    background: url("/img/travel_light.png") no-repeat center center;
+    background-size: contain;
+    transform: rotateX(180deg);
+    opacity: 0.5;
+    filter: blur(60px);
+}
+#lights_left .travel_light:nth-of-type(1) { animation-delay: -1s; }
+#lights_left .travel_light:nth-of-type(2) { animation-delay: -2s; }
+#lights_left .travel_light:nth-of-type(3) { animation-delay: 0s; }
+#lights_right .travel_light:nth-of-type(1) { animation-delay: -0.3s; }
+#lights_right .travel_light:nth-of-type(2) { animation-delay: -1.5s; }
+#lights_right .travel_light:nth-of-type(3) { animation-delay: -0.8s; }
+
+@keyframes light_moving {
+    0% {
+        transform: rotateX(180deg) rotateZ(-30deg);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateZ(30deg);
+    }
+
+    100% {
+        transform: rotateX(180deg) rotateZ(-30deg);
+    }
+}
+
+#stop-animations {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(46, 70, 174, 0.6);
+    border: 3px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.5em;
+    padding: 5px 15px;
+    box-shadow: 4px 4px 2px #000;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font/clarendon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Les 8 fondamentaux de l'accessibilité</title>
+    <meta name="description"
+          content="Questionnaire sur les 8 fondamentaux de l'accessibilité, présenté lors de la sensibilisation Atecna">
+
+    <link rel="icon" href="/img/icon.png" sizes="any">
+    <link rel="apple-touch-icon" href="/img/icon.png">
+
+    <meta name="theme-color" content="#1E369D">
+</head>
+
+<body>
+
+<main>
+    <aside id="logo" aria-hidden="true">
+        <img src="/img/logo.png" alt="" />
+    </aside>
+
+    <h1>Les 8 fondamentaux de l'accessibilité</h1>
+
+    <ul id="board">
+    </ul>
+</main>
+
+<aside id="lights_left" class="lights" aria-hidden="true">
+    <div class="travel_light"></div>
+    <div class="travel_light"></div>
+    <div class="travel_light"></div>
+</aside>
+
+<aside id="lights_right" class="lights" aria-hidden="true">
+    <div class="travel_light"></div>
+    <div class="travel_light"></div>
+    <div class="travel_light"></div>
+</aside>
+
+<button id="stop-animations" onClick="toggleAnimation()">Arrêter les animations</button>
+
+<script src="js/answer-box.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
