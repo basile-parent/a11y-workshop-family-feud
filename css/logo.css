@@ -1,0 +1,68 @@
+#logo {
+    position: absolute;
+    top: -160px;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+}
+
+#logo img {
+    height: 100%;
+    max-width: 100%;
+}
+
+#logo #atecna-stamp {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    height: 90px;
+    width: 300px;
+
+    background: rgb(19,19,19);
+    background: linear-gradient(353deg, rgba(19,19,19,1) 51%, rgba(54,54,54,1) 62%, rgba(19,19,19,1) 72%);
+
+    padding: 15px;
+    transform: rotateZ(7deg);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    clip-path: polygon(90% 1%, 100% 32%, 100% 100%, 0 100%, 0 0);
+}
+
+.sticky{
+    transform: rotate(45deg);
+    position: absolute;
+    top: -15px;
+    right: -31px;
+    width: 108px;
+    height: 108px;
+}
+
+.circle_wrapper{
+    position: absolute;
+    width: 65px;
+    height: 108px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    width: 46px;
+    height: 140px;
+    margin: 20px;
+
+    border-radius: 999px;
+}
+.back{
+    height: 10px;
+    top: 30px;
+}
+.back .circle{
+    margin-top: -130px;
+    background: rgb(38,38,38);
+    background: linear-gradient(135deg, rgba(38,38,38,1) 0%, rgba(135,135,135,1) 100%);
+}
