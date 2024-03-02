@@ -88,7 +88,7 @@
 
     border: 6px white double;
 }
-.flip-card-front:focus, .flip-card-back:focus {
+.flip-card-front:focus-visible, .flip-card-back:focus-visible {
     background: linear-gradient(0deg, rgb(0, 25, 124) 0%, rgb(39, 69, 194) 41%, rgb(73, 100, 222) 50%, rgb(92, 117, 222) 100%);
     border: 8px white solid;
 }
@@ -110,7 +110,7 @@
     background: linear-gradient(to left, #374fb4, #081c6b);
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.flip-card-front:focus span {
+.flip-card-front:focus-visible span {
     background: linear-gradient(to left, #4a5dad, #2a3c85);
 }
 

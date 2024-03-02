@@ -1,20 +1,32 @@
 #logo {
     position: absolute;
-    top: -160px;
-    height: 300px;
-    width: 500px;
+    top: -100px;
+    height: 200px;
+    width: 400px;
     text-align: center;
 }
 
 #logo img {
     height: 100%;
     max-width: 100%;
+    animation: logo-glowing 3.5s ease-in-out infinite;
 }
+
+.no-animation #logo img {
+    animation: none;
+}
+
+@keyframes logo-glowing {
+    0% { filter: drop-shadow(0 0 1rem #5b7fff); }
+    50% { filter: drop-shadow(0 0 1rem #63c5c5); }
+    100% { filter: drop-shadow(0 0 1rem #5b7fff); }
+}
+
 
 #logo #atecna-stamp-wrapper {
     position: absolute;
-    top: 60px;
-    left: 100px;
+    top: 5px;
+    left: 50px;
     height: 90px;
     width: 300px;
 

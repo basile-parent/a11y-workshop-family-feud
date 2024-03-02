@@ -63,11 +63,12 @@ nav#skipLinks {
     text-decoration: underline;
     font-family: clarendon, Tahoma, serif;
 }
-.skip-link:focus {
+.skip-link:focus-visible {
     top: 0;
 }
 
 main {
+    position: relative;
     margin: 53vh auto 0;
     transform: translateY(-50%);
     display: flex;
@@ -91,8 +92,29 @@ main {
     0 0 0 30px hsl(26, 77%, 52%),
     0 0 0 33px hsl(0, 0%, 0%);
     background: url("/img/lights.png") #040e3b repeat;
-
 }
+
+#glowing-main {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background: url("/img/lights_glowed.png") #040e3b repeat;
+    animation: glowing 2s ease-in-out infinite;
+}
+.no-animation #glowing-main {
+    display: none;
+}
+
+@keyframes glowing {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 
 h1 {
     width: 650px;
@@ -135,7 +157,7 @@ h1 {
     box-shadow: 4px 4px 2px #000;
 }
 
-#actions #accessibility-actions button:focus {
+#actions #accessibility-actions button:focus-visible {
     background-color: rgba(6, 39, 176, 0.6);
     font-weight: 700;
 }
@@ -194,15 +216,7 @@ h1 {
 #lights_right .travel_light:nth-of-type(3) { animation-delay: -0.8s; }
 
 @keyframes light_moving {
-    0% {
-        transform: rotateX(180deg) rotateZ(-30deg);
-    }
-
-    50% {
-        transform: rotateX(180deg) rotateZ(30deg);
-    }
-
-    100% {
-        transform: rotateX(180deg) rotateZ(-30deg);
-    }
+    0% { transform: rotateX(180deg) rotateZ(-30deg); }
+    50% { transform: rotateX(180deg) rotateZ(30deg); }
+    100% { transform: rotateX(180deg) rotateZ(-30deg); }
 }
