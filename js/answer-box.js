@@ -51,6 +51,8 @@ const AnswerBox = (index, answer) => `
 const flipCard = (index) => {
     document.getElementById(`flip-card-${index}`).classList.toggle(REVEAL_CSS_CLASS);
 
+    playSound("correct-answer-sound");
+
     const isFlipped = document.getElementById(`flip-card-${index}`).classList.contains(REVEAL_CSS_CLASS);
 
     const frontElement = document.querySelector(`#flip-card-${index} .flip-card-front`);

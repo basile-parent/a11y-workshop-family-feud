@@ -1,0 +1,52 @@
+#add-error, .error-box {
+    font-family: Arial, sans-serif;
+
+    background: transparent;
+    color: red;
+    font-weight: 700;
+}
+
+#add-error {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    font-size: 1em;
+    padding: 3px 8px;
+
+    border: 5px outset red;
+    border-radius: 8px;
+    background-color: rgba(19, 32, 79, 0.6);
+}
+
+#errors-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 370px;
+    width: 475px;
+    pointer-events: none;
+ }
+
+#errors-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.error-box {
+    font-size: 2.5em;
+    padding: 3px 20px;
+    border: 10px outset red;
+    border-radius: 15px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    text-shadow: 5px 5px 3px black;
+    box-shadow: 5px 5px 3px black;
+}

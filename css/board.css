@@ -81,12 +81,8 @@
     width: 100%;
     height: 100%;
 
-    cursor: pointer;
-
     font-weight: bold;
     font-size: 0.6em;
-    /*background: transparent;*/
-    /*border: none;*/
     background: rgb(30, 54, 157);
     background: linear-gradient(0deg, rgba(30, 54, 157, 1) 0%, rgba(93, 118, 223, 1) 41%, rgba(152, 169, 244, 1) 50%, rgba(135, 153, 230, 1) 100%);
 

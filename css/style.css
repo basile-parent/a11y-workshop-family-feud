@@ -16,10 +16,32 @@ html, body {
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
 ul, li {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 main {
@@ -30,12 +52,8 @@ main {
     align-items: center;
     justify-content: center;
 
-
-    /*height: 75vh;*/
-    /*width: 100vh;*/
     height: 700px;
     width: 1000px;
-    /*max-height: 75vh;*/
 
     border-radius: 100%;
     box-shadow: 0 0 0 3px hsl(0, 0%, 0%),
