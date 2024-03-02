@@ -8,8 +8,9 @@ function toggleAnimation() {
 
     if (bodyElement.classList.contains(STOP_ANIMATION_CLASSNAME)) {
         stopButton.innerText = "Relancer les animations";
+        stopButton.setAttribute("aria-pressed" ,"false");
     } else {
         stopButton.innerText = "Arrêter les animations";
+        stopButton.setAttribute("aria-pressed" ,"true");
     }
-
 }

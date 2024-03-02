@@ -22,6 +22,17 @@
 
 <body>
 
+<aside id="actions">
+    <section id="accessibility-actions">
+        <button id="stop-sounds" onClick="toggleSoundEffect()" aria-pressed="true">Arrêter les sons</button>
+        <button id="stop-animations" onClick="toggleAnimation()" aria-pressed="true">Arrêter les animations</button>
+    </section>
+
+    <section id="game-actions">
+        <button id="add-error" onClick="addError()" aria-label="Ajouter une erreur" title="Ajouter une erreur">X</button>
+    </section>
+</aside>
+
 <main>
     <aside id="logo" aria-hidden="true">
         <img src="/img/logo.png" alt="" />
@@ -71,9 +82,6 @@
     <div class="travel_light"></div>
     <div class="travel_light"></div>
 </aside>
-
-<button id="add-error" onClick="addError()" aria-label="Ajouter une erreur" title="Ajouter une erreur">X</button>
-<button id="stop-animations" onClick="toggleAnimation()">Arrêter les animations</button>
 
 <script src="js/answer-box.js"></script>
 <script src="js/app.js"></script>
