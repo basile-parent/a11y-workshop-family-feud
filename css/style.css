@@ -27,7 +27,7 @@ ul, li {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .visually-hidden {

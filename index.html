@@ -37,6 +37,17 @@
     </section>
 </aside>
 
+<aside id="errors-dialog">
+    <p aria-live="polite" aria-atomic="true" class="visually-hidden" id="errors-live"></p>
+
+    <audio id="wrong-answer-sound" class="hidden">
+        <source src="/media/wrong_answer.mp3" />
+    </audio>
+
+    <div id="errors-wrapper" class="hidden" aria-hidden="true">
+    </div>
+</aside>
+
 <main>
     <div id="glowing-main"></div>
 
@@ -65,17 +76,6 @@
     <ul id="board" tabindex="-1">
     </ul>
 </main>
-
-<aside id="errors-dialog" class="hidden">
-    <p aria-live="polite" aria-atomic="true" class="visually-hidden" id="errors-live"></p>
-
-    <audio id="wrong-answer-sound" class="hidden">
-        <source src="/media/wrong_answer.mp3" />
-    </audio>
-
-    <div id="errors-wrapper" aria-hidden="true">
-    </div>
-</aside>
 
 <aside id="lights_left" class="lights" aria-hidden="true">
     <div class="travel_light"></div>
