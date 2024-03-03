@@ -49,6 +49,9 @@ const AnswerBox = (index, answer) => `
 `
 
 const flipCard = (index) => {
+    if (isNaN(index) || index > MAX_ANSWERS || index < 1) {
+        return;
+    }
     document.getElementById(`flip-card-${index}`).classList.toggle(REVEAL_CSS_CLASS);
 
     const isFlipped = document.getElementById(`flip-card-${index}`).classList.contains(REVEAL_CSS_CLASS);

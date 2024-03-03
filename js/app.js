@@ -18,3 +18,31 @@ function toggleAnimation() {
 function goToContent() {
     document.getElementById("board").focus()
 }
+
+const keyboardNumberMapping = {
+    "&": 1,
+    "é": 2,
+    "\"": 3,
+    "'": 4,
+    "(": 5,
+    "-": 6,
+    "è": 7,
+    "_": 8,
+    "ç": 9,
+    "à": 0,
+}
+window.addEventListener("keydown", (e) => {
+    const keyboardKey = e.key?.toLowerCase();
+    if (!keyboardKey) {
+        return;
+    }
+    if (keyboardKey?.toLowerCase() === "x") {
+        addError()
+        return;
+    }
+    const answerBoxIndex = keyboardNumberMapping[keyboardKey] || keyboardKey
+    if (!isNaN(answerBoxIndex)) {
+        flipCard(answerBoxIndex)
+        return;
+    }
+})

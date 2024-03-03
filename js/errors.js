@@ -18,7 +18,6 @@ function addError() {
     document.getElementById("errors-live").innerText = `Vous avez fait ${ errorCount } erreur${ errorCount > 1 ? "s" : ""}`;
 
     timeoutRef = setTimeout(() => {
-        console.log("timeout")
         wrapperElement.classList.add(HIDDEN_CLASSNAME);
         timeoutRef = null;
     }, 2000)
