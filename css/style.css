@@ -1,7 +1,7 @@
 html {
     color: #FFF;
     font-size: 3em;
-    background: url("/img/stage.png") #0a1956 no-repeat center center;
+    background: url("img/stage.png") #0a1956 no-repeat center center;
     background-size: cover;
     font-family: clarendon, Tahoma, serif;
     overflow: hidden;
@@ -91,7 +91,7 @@ main {
     0 0 0 28px hsl(26, 76%, 55%),
     0 0 0 30px hsl(26, 77%, 52%),
     0 0 0 33px hsl(0, 0%, 0%);
-    background: url("/img/lights.png") #040e3b repeat;
+    background: url("img/lights.png") #040e3b repeat;
 }
 
 #glowing-main {
@@ -102,7 +102,7 @@ main {
     height: 100%;
     width: 100%;
     border-radius: 100%;
-    background: url("/img/lights_glowed.png") #040e3b repeat;
+    background: url("img/lights_glowed.png") #040e3b repeat;
     animation: glowing 2s ease-in-out infinite;
 }
 .no-animation #glowing-main {
@@ -188,7 +188,7 @@ h1 {
     display: inline-block;
     height: 800px;
     width: 90px;
-    background: url("/img/travel_light.png") no-repeat center center;
+    background: url("img/travel_light.png") no-repeat center center;
     background-size: cover;
 
     transform: rotateX(180deg);
@@ -202,7 +202,7 @@ h1 {
     left: -60px;
     height: 1500px;
     width: 210px;
-    background: url("/img/travel_light.png") no-repeat center center;
+    background: url("img/travel_light.png") no-repeat center center;
     background-size: contain;
     transform: rotateX(180deg);
     opacity: 0.5;
