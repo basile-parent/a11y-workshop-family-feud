@@ -30,7 +30,7 @@
     height: 90px;
     width: 300px;
 
-    background: url("img/noisy-bg.jpg") no-repeat center center;
+    background: url("../img/noisy-bg.jpg") no-repeat center center;
 
     transform: rotateZ(7deg);
     border-radius: 8px;
