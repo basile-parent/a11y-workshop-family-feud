@@ -1,13 +1,13 @@
 const MAX_ANSWERS = 8
 const ANSWERS = [
-    "Texte 1",
-    "Texte 2",
-    "Texte 3",
-    "Texte 4",
-    "Texte 5",
-    "Texte 6",
-    "Texte 7",
-    "Texte 8",
+    "Contrastes",
+    "Alternatives textuelles",
+    "Titres + title",
+    "Liens d'évitement",
+    "Focus",
+    "Sémantique",
+    "Info évidente",
+    "Noms accessibles",
 ]
 const REVEAL_CSS_CLASS = "revealed"
 
