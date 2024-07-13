@@ -3,6 +3,8 @@
 This repository is an implementation of the family feud game, designed to be used
 by [Atecna](https://www.atecna.fr/) on there accessibility workshop.
 
+The demo can be seen [here](https://basile-parent.github.io/accessible-family-feud)
+
 THIS REPO CANNOT BE REPLICATED FOR OTHER PURPOSE. See the [licence](./LICENCE.md) for more informations.
 
 ![Site screenshot](./_doc/a11y-family-feud-screenshot.jpg)
